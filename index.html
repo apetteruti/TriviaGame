@@ -11,9 +11,14 @@
 
 </header>
 <body>
+
 <div class = "container">
+
     <h1>Soft Drink Trivia</h1>
-    <div class = "timer"></div>
+    <button id = "start-button">Start</button>
+
+    <div id = "second-page">
+    <div id = "show-timer">45 </div> <span>seconds</span>
 
     <form action = "" method = "get" class = "q1">
         <h4>What is the oldest soft drink in the United States?</h4>
@@ -50,6 +55,20 @@
         <input type="radio" name="q4" id="q4-radio" value="false">Turkey & Gravy<br>
         <input type="submit" id = "submit">
       </form> 
+      <br>
+      </div>
+
+      <div id = "third-page">
+
+        
+        <h2>Results</h2>
+        <h4>Correct: <span id = "correct-display"></span></h4>
+        <h4>Incorrect: <span id = "incorrect-display"></span> </h4>
+        <h4>Unanswered: <span id = "unanswered-display"></span></h4>
+        <br>
+        <button id = "restart-button">Restart</button>
+      </div>
+      
 
 </div>
 
