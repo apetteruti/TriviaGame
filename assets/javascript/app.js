@@ -5,7 +5,7 @@ $(document).ready(function () {
     var unanswered = 0;
 
     //Sets the visibility of the three sections of the trivia
-    $("#start-button").show();
+    $("#titleDiv").show();
     $("#second-page").hide();
     $("#third-page").hide();
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
         function start() {
             counter = setInterval(count, 1000);
             //show me and hide me directions here
-            $("#start-button").hide();
+            $("#titleDiv").hide();
             $("#second-page").show();
             $("#third-page").hide();
         }
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
         function stop() {
             clearInterval(counter); //stops timer  
-            $("#start-button").hide();
+            $("#titleDiv").hide();
             $("#second-page").hide();
             $("#third-page").show();
         }
@@ -47,7 +47,7 @@ $(document).ready(function () {
             time = 1;
             clearInterval(counter); //stops timer
             displayScores();
-            $("#start-button").hide();
+            $("#titleDiv").hide();
             $("#second-page").hide();
             $("#third-page").show();
         }
