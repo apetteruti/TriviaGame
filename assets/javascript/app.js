@@ -68,10 +68,10 @@ $(document).ready(function () {
             //First question data and if statement to put data in scoring categories
             var q1Data = $('input[name=q1]:checked').val();
             // console.log(q1Data);
-            if (q1Data == true) {
+            if (q1Data == "true") {
                 correct++;
                 console.log(q1Data + correct);
-            } else if (q1Data == false) {
+            } else if (q1Data == "false") {
                 incorrect++;
                 console.log(q1Data + incorrect);
             } else {
@@ -81,10 +81,10 @@ $(document).ready(function () {
 
             //Second question data
             var q2Data = $('input[name=q2]:checked').val();
-            if (q2Data == true) {
+            if (q2Data == "true") {
                 correct++;
                 console.log(q2Data + correct);
-            } else if (q2Data == false) {
+            } else if (q2Data == "false") {
                 incorrect++;
                 console.log(q2Data + incorrect);
             } else {
@@ -94,10 +94,10 @@ $(document).ready(function () {
 
             //Third question data
             var q3Data = $('input[name=q3]:checked').val();
-            if (q3Data == true) {
+            if (q3Data == "true") {
                 correct++;
                 console.log(q3Data + correct);
-            } else if (q3Data == false) {
+            } else if (q3Data == "false") {
                 incorrect++;
                 console.log(q3Data + incorrect);
             } else {
@@ -106,10 +106,10 @@ $(document).ready(function () {
             }
             //fourth question data
             var q4Data = $('input[name=q4]:checked').val();
-            if (q4Data == true) {
+            if (q4Data == "true") {
                 correct++;
                 console.log(q4Data + correct);
-            } else if (q4Data == false) {
+            } else if (q4Data == "false") {
                 incorrect++;
                 console.log(q4Data + incorrect);
             } else {
