@@ -35,9 +35,9 @@
 
 
     <div id="second-page">
-        <h1>The Taste Test</h1>
-        <hr>
-        <br><br>
+      <h1>The Taste Test</h1>
+      <hr>
+      <br>
       <div class="row">
         <div class="col-md-4">
           <div id="show-timer" class="timerLabel">45 </div> <span class="timerLabel">seconds</span>
@@ -82,7 +82,7 @@
             <input type="radio" name="q4" id="q4-radio" value="true"> Marshmallow
             <input type="radio" name="q4" id="q4-radio" value="false">Turkey & Gravy<br>
             <br>
-            <input type="submit" id="submit">
+            <input type="submit" class="btn btn-secondary btn-lg" id="submit">
           </form>
           <br>
         </div>
@@ -90,16 +90,24 @@
     </div>
 
     <div id="third-page">
-        <h1>The Taste Test</h1>
-        <hr>
-        <br><br>
+      <h1>The Taste Test</h1>
+      <hr>
+      <br><br>
 
-      <h2>Results</h2>
+      <h2 id = "h2Display">Results</h2>
+      <div id = "resultsDisplay">
       <h4>Correct: <span id="correct-display"></span></h4>
       <h4>Incorrect: <span id="incorrect-display"></span> </h4>
       <h4>Unanswered: <span id="unanswered-display"></span></h4>
+      </div>
       <br>
-      <button type="button" class="btn btn-secondary btn-lg pull-right" id="restart-button">Restart</button>
+      <div class="d-flex align-items-end flex-column">
+
+        <div class="mt-auto p-2">
+          <br><br><br>
+          <button type="button" class="btn btn-secondary btn-lg pull-right" id="restart-button">Restart</button>
+        </div>
+      </div>
     </div>
 
 
