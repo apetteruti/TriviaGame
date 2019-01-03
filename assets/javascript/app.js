@@ -55,6 +55,14 @@ $(document).ready(function () {
         function restart() {
             time = 45;
             start();
+            // $("#form")[0].reset();
+            $("#correct-display").empty();
+            $("#incorrect-display").empty();
+            $("#unanswered-display").empty();
+            correct = 0;
+            incorrect = 0;
+            unanswered = 0;
+
         }
         start();
     })
