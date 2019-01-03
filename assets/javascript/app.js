@@ -55,7 +55,8 @@ $(document).ready(function () {
         function restart() {
             time = 45;
             start();
-            // $("#form")[0].reset();
+            $("form")[0].reset();
+            // $(this).closest('form').find('input[type=text], textarea').val('');
             $("#correct-display").empty();
             $("#incorrect-display").empty();
             $("#unanswered-display").empty();
